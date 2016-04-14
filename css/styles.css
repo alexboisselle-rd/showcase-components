@@ -1,0 +1,1060 @@
+body {
+	margin: 0px;
+	font-family: 'Advent Pro';
+	font-weight: 400;
+}
+.structure {
+	border: none;
+}
+.frame {
+	border: none;
+}
+.column {
+	border: 1px solid blue;
+}
+.inner {
+	border: none;
+	max-width: 1200px;
+	overflow: hidden;
+	height: 100%;
+	margin: auto;
+}
+#header {
+	overflow: hidden;
+	height: 70px;
+	background: #000;
+}
+#header .column {
+	width: 50%;
+	float: left;
+	border: none;
+	height: 100%;
+}
+#logo {
+
+}
+#logo p {
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 30px;
+	margin: 0px;
+}
+#logo img {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#nav {
+	height: 100%;
+}
+#nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0px;
+    padding: 0px;
+    float: right;
+    padding-right: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#nav ul li {
+	float: left;
+	padding: 12px;
+}
+#nav ul li a {
+	color: #7F7F7F;
+	transition: color 0.2s;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 600;
+}
+#nav ul li a:hover {
+	color: #C42026;
+}
+#carousel {
+	height: 468px;
+/*	background-image: url('../images/carousel.jpg');*/
+	background-size: cover;
+	background-repeat: none;
+	position: relative;
+	width: 100%;
+    overflow: hidden;
+}
+#carousel .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;	
+    position: relative;
+}
+#custom-carousel {
+	width: 100%;
+}
+#custom-carousel ul {
+	margin: 0px;
+	width: 100%;
+}
+#custom-carousel .slide {
+	list-style-type: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: left 0.2s;
+	display: none;
+	width: 100%;
+	overflow: hidden;	
+}
+#custom-carousel .slide img {
+	height: 100%;
+}
+
+
+#custom-carousel .slide.next.right {
+	left: 100%;
+	display: block;
+	transition: left 0s;
+}
+#custom-carousel .slide.previous.right {
+	left: -100%;
+	display: block;
+}
+
+
+#custom-carousel .slide.next.left {
+	left: -100%;
+	display: block;
+	transition: left 0s;
+}
+#custom-carousel .slide.previous.left {
+	left: 100%;
+	display: block;
+}
+
+
+#custom-carousel .slide.current {
+	left: 0px !important;
+	display: block;
+	transition: left 0.2s !important;
+}
+
+#carousel-pagination {
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	font-size: 20px;
+}
+
+#carousel-controls {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+#carousel-controls a {
+	background: white;
+}
+#slide-left {
+	float: left;
+}
+#slide-right {
+	float: right;
+}
+#carousel-details {
+	margin-left: 87px;
+}
+#carousel-details h1 {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+	padding: 15px 20px;
+	margin-bottom: 6px;
+	display: inline-block;	
+}
+#carousel-details p {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	font-size: 24px;
+	font-weight: 100;
+	padding: 10px 20px;
+	margin-bottom: 6px;
+}
+#carousel-details button {
+	font-size: 18px;
+	font-weight: 600;
+	background-color: rgba(0,0,0,0.95);
+	color: white;
+	font-family: 'Advent Pro';
+	padding: 11px 34px 11px 72px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+#carousel-details button:hover {
+	background-color: #C42026;
+}
+#carousel-details button:focus {
+	outline: 0;
+}
+#carousel-details .button-look {
+	background-image: url('../images/eye.svg');
+	background-repeat: no-repeat;
+    background-position-x: 22px;
+    background-position-y: 14px;
+}
+#carousel-details .button-show {
+	background-image: url('../images/car-add.svg');
+	background-repeat: no-repeat;
+    background-position-x: 18px;
+    background-position-y: 8px;
+}
+#col3st {
+	overflow: hidden;
+	height: 524px;
+}
+#col3Content #title {
+	padding: 65px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+#col3Content .column {
+	width: 33.3%;
+	float: left;
+	border: none;
+}
+#col3Content .column .card {
+	margin: 0px 15px;
+	min-height: 286px;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#col3Content .column .card h2 {
+	background: black;
+	color: white;
+	margin: 0px;
+	padding: 15px;
+	text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+}
+#col3Content .column p {
+	padding-left: 140px;
+	background-repeat: no-repeat;
+	margin: 30px 0px;
+	font-size: 17px;
+    line-height: 21px;
+}
+#col3Content #col1 p {
+	background-image: url('../images/car_pink.svg');
+}
+#col3Content #col2 p {
+	background-image: url('../images/car_dash.svg');
+}
+#col3Content #col3 p {
+	background-image: url('../images/car_chat.svg');
+}
+#col3Content .column h3 {
+	text-align: right;
+	color: #C42127;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+#col3Content .column h3:hover {
+    background-color: rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+
+.see {
+
+}
+
+.see .title {
+/*	padding-top: 70px;
+	padding-bottom: 25px;*/
+}
+
+.see .title .inner .text {
+	background: rgba(0,0,0,0.8);
+	padding: 13px 37px 20px;
+	display: inline-block;	
+	color: #fff;
+}
+
+.see .title .inner .text h2 {
+	display: inline;
+	font-weight: 100;
+	font-size: 60px;
+}
+
+.see .title .inner .text p {
+	display: inline;
+	font-size: 16px;
+}
+
+.see #form {
+	margin-top:30px;
+}
+
+.controls-container .controls {
+    display: inline-block;
+    background: #000;
+    padding: 8px 8px 2px;
+    float: right;
+}
+
+.controls-container .controls img {
+	opacity: 0.5;
+	transition: opacity 0.2s;
+	cursor: pointer;
+}
+
+.controls-container .controls img.active {
+	opacity: 0.8;
+}
+
+.controls-container .controls img:hover {
+	opacity: 1;
+}
+
+.controls-container .controls img:nth-child(2) {
+	margin-left:8px;
+}
+
+.view {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.view.active {
+	opacity: 1;
+}
+
+#thumbs {
+
+}
+
+
+#table table {
+	width: 100%;
+}
+#table thead {
+	background: black;
+}
+#table tbody {
+	background-color: #F3F4F4;
+}
+#table th {
+	color: white;
+	padding: 11px 0px;
+}
+#table td {
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 7px 0px;
+	font-family: Arial;
+	font-size: 11px;
+}
+#table tfoot {
+	background: black;
+	color: white;
+}
+#table .star {
+	width: 13px;
+	height: 13px;
+	opacity: 0.4;
+	display: inline-block;
+	margin: 0px 4px;
+	background: url('../images/star.svg');
+	cursor: pointer;
+}
+#table .star.highlighted, #table .star:hover {
+	opacity: 1;
+}
+
+
+.star {
+	width: 13px;
+	height: 13px;
+	opacity: 0.4;
+	display: inline-block;
+	margin: 0px 2px !important;
+	background: url('../images/star.svg');
+	cursor: pointer;
+}
+.star.highlighted, .star:hover {
+	opacity: 1;
+}
+
+.hover-highlighted {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+img.type-icon {
+    width: 18px;
+}
+
+.car-entry {
+    position: relative;
+    width: 32%;
+    float: left;
+    margin: 0 5px;
+    margin-bottom: 25px;
+}
+
+.car-type-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+img.car-photo {
+    position: absolute;
+    width: 100%;
+    border: solid rgba(76, 0, 0, 0.44) 1px;
+}
+
+.car-details {
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+    padding-bottom: 19px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    border: solid rgba(76, 0, 0, 0.59) 2px;
+}
+
+.car-details h3 {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 100;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.car-details h3 a {
+    font-size: 14px;
+    color: #c52127;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.car-rating {
+    padding-left: 15px;
+}
+
+.car-content {
+    position: relative;
+    z-index: 5;
+    margin-top: 190px;
+    width: 96%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.car-content p.date-field {
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: -15px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.car-details-left {
+    width: 35%;
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.car-details-left span {
+    font-weight: 100;
+    font-size: 10px;
+    margin-right: 15px;
+}
+
+
+.car-details-right span {
+    font-weight: 100;
+    font-size: 10px;
+    float: left;
+    width: 30%;
+}
+
+.car-details-right span.desc-text {
+    float: right;
+    width: 60%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.details-icons {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 25px;
+}
+
+.car-details-right span.desc-text a {
+    color:#c52127;
+}
+
+h3.menu-title {
+    float: left;
+    padding-left: 25px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 19px;
+    margin-right: 41px;
+}
+
+.car-details-right {
+    font-size: 12px;
+    width: 45%;
+    float: left;
+}
+
+div.filter-bar {
+    background: #000;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 50px;
+    margin-bottom: 30px;
+}
+
+
+.filter-bar ul {
+    margin: 0px;
+    color: #fff;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.filter-bar ul li { 
+    float: left;
+    padding: 20px 30px;
+    background-image: url('../images/menu-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center right;
+}
+
+#form {
+	overflow: hidden;
+	height: 467px;
+	/*background-image: url('../images/parallax.jpg');*/
+}
+#form h4 {
+	color: white;
+	font-size: 25px;
+	font-weight: 600;
+}
+#form h4 span {
+	font-weight: 100;
+}
+#form .inner {
+    display: flex;
+    align-items: center;
+}
+#form .column {
+	width: 50%;
+	float: left;
+	border: none;
+}
+#form form {
+	width: 100%;
+}
+#form .fields {
+	padding: 0px 35px;
+}
+#form .fields h4 {
+	margin: 0px;
+	margin-bottom: 20px;
+}
+#form .fields .field {
+	margin-bottom: 7px;
+}
+#form .fields .field input[type="text"] {
+	width: 352px;
+	background: black;
+	border: 0px;
+	padding: 15px;
+	color: white;
+	font-family: "Advent Pro";
+	font-weight: 700;
+	font-size: 16px;
+}
+#form .fields .field input[type="text"]::-webkit-input-placeholder {
+	color: white;
+	font-weight: 300;
+}
+#form .fields input[type="submit"] {
+    font-family: "Advent Pro";
+    color: #fff;
+    background: #000;
+    border: 0px;
+    padding: 11px 29px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -54px;
+    font-weight: 600;
+    font-size: 21px;
+}
+#form .fields .field textarea {
+	width: 100%;
+	background: black;
+	border: 0px;
+	padding: 15px;
+	color: white;
+	font-family: "Advent Pro";
+	font-weight: 700;
+	font-size: 16px;
+}
+#form .fields .field textarea::-webkit-input-placeholder,
+#form .fields .field textarea::-moz-input-placeholder,
+#form .fields .field textarea::-ms-input-placeholder {
+	color: white;
+	font-weight: 300;
+}
+#form .fields .field select {
+	width: 352px;
+    background: #000;
+    border: 0px;
+    color: #fff;
+    padding: 15px 9px;
+    width: 382px;
+    font-family: "Advent Pro";
+    font-size: 16px;
+}
+#form .fields .field .checkbox {
+	width: 154px;
+	margin-right: 9px;
+    display: inline-block;	
+    background: black;
+    padding: 15px;
+    color: white;
+	font-family: "Advent Pro";
+	font-weight: 300;
+	font-size: 16px;
+}
+#form .fields .field .checkbox input {
+	float: right;
+}
+#footer {
+	height: 212px;
+	background: black;
+	color: white;
+}
+
+
+#header {	
+	overflow: hidden;
+	height: 70px;
+	background: #000;
+}
+
+
+#header .column {
+	width: 50%;
+	float: left;
+	border: none;
+	height: 100%;
+}
+.title {
+	height: 190px;
+}
+
+.structure.add {
+}
+
+.structure.add .title {
+    background-image: url('../images/blue-car.svg');
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center -35px;
+    background-size: 110%;
+    height: 235px;
+}
+
+.structure.add .title .inner {
+	padding-top: 63px;
+}
+
+.add-car-header {
+	margin-bottom:15px;
+}
+
+.add-car-header .inner {
+	padding: 40px 0px 25px;
+}
+
+.add-car-right { 
+	width: 30%;
+	float: right;
+}
+.add-car-right p {
+	text-align:right;
+}
+.add-car-right p a {
+	border:solid 2px #C52127;
+	padding:20px;
+	padding-right:65px;
+	padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    text-decoration:none;
+    color: #C52127 ;
+}
+.outline-btn {
+    background-image: url('../images/show-car.svg');
+    background-repeat:no-repeat;
+    background-position:130px center;
+   	background-size: 50px;
+}
+.add-car-left {
+	float:left;
+	width:41%;
+	padding-left:120px;
+	background-image: url('../images/add-car.svg');
+	background-repeat:no-repeat;
+	background-position: 2px 5px;
+	background-size: 90px;
+}
+
+/** 
+MAIN STYLES
+ **/
+.content-container .inner {
+    background-color: #f4f4f4;
+}
+
+.content-container .inner .form-container {
+    width: 55%;
+    float: left;
+    padding-left: 25px;
+}
+
+.content-container .inner .form-sidebar {
+    width: 40%;
+    float: right;
+}
+
+
+.field input {
+    width: 290px;
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    border-style:solid; 
+    font-size:14px; 
+    border-radius:0px; 
+    border-width:0px; 
+    text-shadow:0px 0px 0px rgba(42,42,42,.75); 
+    box-shadow: 0px 1px 0px 0px rgba(42,42,42,.17);
+    padding:15px;
+}
+
+p.align-left {
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+
+p.align-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+
+.action-buttons {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.reset-btn {
+    padding: 11px;
+    padding-right: 50px;
+    background-color: #c52127;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-image: url('../images/reset-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 72px 11px;
+    background-size: 20px;
+    transition: background 0.5s;
+}
+
+.reset-btn:hover {
+    transition: background 0.5s;
+    background-color: rgba(197, 33, 39, 0.54);
+}
+
+.save-btn {
+    padding: 11px;
+    padding-right: 50px;
+    background-color: #39b54a;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-image: url('../images/save-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 65px 10px;
+    background-size: 20px;
+    transition: background 0.5s;
+}
+
+.save-btn:hover {
+    transition: background 0.5s;
+    background-color: rgba(57, 181, 74, 0.5);
+}
+
+
+
+
+.field select {
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: #fff;
+    width: 319px;
+    height: 47px;
+    border-style:solid; 
+    font-size:14px; 
+    border-radius:0px; 
+    border-width:0px; 
+    border-bottom: #dedddd solid 2px;
+    padding:15px;
+}
+
+.checkboxes {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.checkbox.field.left input {
+    box-shadow: none;
+}
+
+.text-field.field.full-width input {
+    width: 95% !important;
+}
+
+.form-container h5 {
+    background-color: #000;
+    padding: 10px 0px 10px 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 15px;   
+}
+
+h5 span {
+    font-size: 16px;
+}
+
+input#car-luxury { width: 12px; float: right; }
+input#car-performance { width: 12px; float: right; }
+
+.checkbox.lux {
+    background-image: url('../images/diamond.svg');
+    background-repeat: no-repeat;
+    background-size: 6%;
+    background-position: 8px center;
+}
+
+.checkbox.perf {
+    background-image: url('../images/perfomance-gage.svg');
+    background-repeat: no-repeat;
+    background-size: 6%;
+    background-position: 8px center;
+}
+
+
+
+.checkbox.field.left {
+    background-color: #fff;
+    box-shadow: 0px 1px 0px 0px rgba(42,42,42,.17); 
+    padding:15px;
+    margin-right: 15px;
+    width: 290px;
+} 
+
+.checkbox.field.right {
+    background-color: #fff;
+    box-shadow: 0px 1px 0px 0px rgba(42,42,42,.17); 
+    padding:15px;
+    margin-right: 0px;
+    width: 290px;
+} 
+
+.checkbox.field.left span, .checkbox.field.right span {
+    margin-left: 30px;
+}
+
+h3.car-stock, h3.vehicule-details, h3.veh-details, h3.veh-specs {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+h3.veh-specs span {
+    padding-left: 0px;
+    float: right;
+    width: 400px;
+}
+
+h3 span {
+    font-size:16px;
+}
+
+.warning-boxes {
+    padding-left: 40px;
+    background-image: url('../images/yellow-warning-sign.svg');
+    background-size: 20px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    transition: background 0.5s;
+}
+
+h4.warning-text {
+    margin:0px;
+    font-size:20px;
+    font-weight: 800;
+    color: #c52127;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    transition: background 0.5s;
+}
+
+.warning-boxes p {
+    margin: 0px;
+}
+
+textarea {
+    margin-top: 19px;
+    box-shadow: 0px 1px 0px 0px rgba(42,42,42,.17);
+    border: none;
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    width: 618px;
+    height: 80px;
+    padding: 20px;
+}
+
+input#submitBtn {
+    font-family: 'Advent Pro', sans-serif;
+    background-image: url('../images/save-later-click.svg');
+    background-repeat: no-repeat;
+    background-position: 103% center;
+    background-size: 22%;
+    background-color: #39b54a;
+    border: none;
+    padding: 15px 69px 15px 25px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    float: right;
+    margin-top: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+
+div.field.left {
+    float: left;
+    margin-right: 18px;
+}
+
+div.field.right {
+    float: left;
+}
+
+.white-field .checkbox.field.left {
+    float: left;
+    margin-right: 18px;
+}
+
+.clear {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.note-box {
+    background-color: #efefef;
+    padding: 3px 16px;
+    width: 89%;
+    margin-top: 25px;
+    margin-bottom: 48px;
+    padding-bottom: 35px;
+}
+
+
+.box__input {
+    border: dashed 3px transparent;
+    margin-top: 20px;
+    margin-right: 22px;
+    min-width: 437px;
+    min-height: 293px;
+    background-image: url('../images/upload-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box__input:hover {
+    border: dashed 3px red;
+    cursor: pointer;
+}
+
+input.box__file {
+    margin-left: 8px;
+    margin-top: 7px;
+    padding: 139px 102px;
+    border: none;
+    background-color: transparent;
+}
+
+input[type="file"] {
+    color: red;
+    background-color: transparent;
+    opacity: 0;
+}
+
+
+
+
+
+

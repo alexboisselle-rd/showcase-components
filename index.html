@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jerry's Exotic Car Showcase</title>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+        
+        
+        <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>
+
+		<script type="application/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+		<script type="application/javascript" src="js/data.js"></script>
+		<script type="application/javascript" src="js/scripts.js"></script>
+	</head>
+	<body>
+		
+		<div id="header" class="structure">
+			<div class="inner">
+				<div class="column">
+					<div id="logo">
+						<img src="images/logo.svg" />
+						<p>Jerry's Exotic Car Showcase</p>
+					</div>
+				</div>
+				<div class="column">
+					<div id="nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Featured</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Add Your Vehicle</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+        <div id="content-canvas" class="structure see add">
+			
+			<div class="title">
+				<div class="inner">
+					<div class="text">
+						<h2>Show us your stuff /</h2>
+						<p>Add another vehicle to your stock</p>
+					</div>
+				</div>
+			</div> <!-- .title -->
+            
+            
+            
+            
+            
+            
+            
+            <!-- Add car header here -->
+            
+            <div class="add-car-header">
+                <div class="inner">          
+                    <div class="add-car-left">
+                        <p> Adding your vehicle to our repitoire is simple. Just use our state of the art wizard and start reaping the benefits of serious targeted vehicle exposure! </p>
+                    </div>    
+                    <div class="add-car-right">
+                        <p>
+                            <a class="show-my-stock outline-btn" href="#myStock">SHOW MY STOCK</a>
+                        </p>
+                    </div>    
+                </div> <!-- .inner -->
+            </div><!-- .add-car-header -->
+
+            
+            <!-- //END the Add car header here -->
+                
+            
+            
+            
+            
+            
+            <div class="structure content-container">
+                <div class="inner">    
+                    <div class="">
+                        <!-- 1st Car Form -->
+                        <form id="quickAdd">
+                            <div id="form1" class="form">
+
+                                <div class="form-container">
+                                    <h3 class="veh-details">VEHICLE DETAILS / <span>These are required and visible to all users</span> </h3>
+                                    
+                                    <div class="white-field text-field field">
+                                    <input placeholder="Name" name="Name" type="text" id="inputName">
+                                    </div>
+
+                                    <div class="clear"> </div>
+                                    
+                                    <div class="white-field select-field selectBrand field left">
+                                        <select name="carBrand" id="car-brand">
+    										<option disabled>Brand</option>
+                                            <option selected value="Audi">Audi</option>
+    										<option value="BMW">BMW</option>
+                                            <option value="Mercedes">Mercedes</option>
+                                            <option value="Ford">Ford</option>
+                                            <option value="Fiat">Fiat</option>
+    									</select>
+                                    </div>    
+                                    
+                                    <div class="white-field text-field field right">
+                                    <input placeholder="Car Model" name="Model" id="car-model" type="text" id="inputModel">
+                                    </div>
+
+                                    <div class="clear"> </div>
+                                    
+                                    <div class="white-field text-field field left">
+                                    <input placeholder="Car Year" name="Year" id="car-year" type="text" id="inputYear">
+                                    </div>
+                                    
+                                    <div class="white-field text-field field right">
+                                    <input placeholder="Car Color"  name="Color" id="car-color" type="text" id="inputColor">
+                                    </div>
+                                    
+                                    <div class="clear"> </div>
+                                    
+                                    <div class="white-field checkboxes">
+                                        <div class="checkbox lux field left">
+                                            <span>Luxury</span> <input type="checkbox" id="car-luxury" name="vehicleTypeLux" value="luxury" />
+                                        </div>
+                                        <div class="checkbox perf field right">
+                                            <span>Performance</span> <input type="checkbox" id="car-performance" name="vehicleTypePreform" value="performance" />
+                                        </div>
+								    </div>
+                                    
+                                    <div class="clear"> </div>
+
+                                    <div class="white-field text-field">
+                                        <textarea placeholder="Car Description" id="car-description"  name="Description"></textarea>
+                                    </div>
+                                    
+                                    <div class="white-field text-field" id="save-form-button">
+                                        <input id="submitBtn" type="button" value="SAVE, I’LL FILL THE REST LATER">
+                                    </div>
+                                    
+                                </div> <!-- .form-container -->
+
+                                
+                            <div class="form-sidebar">
+
+                                <div class="box__input" id="upload_container">
+                                    <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                                </div>
+
+                                <div class="note-box">        
+                                    <div class="warning-boxes">
+                                      <h4 class="warning-text">Be as detailed as possible!</h4>
+                                      <p>We have algorithms that will try to decide exactly which car a user wants to see based off of these specs and the users rating behaviours.
+                                      </p>
+                                        </div>
+                                        
+                                        <div class="warning-boxes">
+                                            <h4 class="warning-text">Bad photos will be rejected!</h4>
+                                            <p>Sorry, but as service catered to the upper echelon of vehicular exposure experience, we base a lot of our look on the beautiful media our users give us.</p>
+                                        </div>    
+                                    </div> 
+                                </div>  <!-- .form-sidebar -->  
+                            </div> <!-- #form1 -->
+                    
+                            <div id="form2" class="form">
+
+                                <div class="form-container">
+                                <h3 class="veh-specs">VEHICLE SPECS /  <span> These aren’t required, however they are recommended as to better categorize your vehicle.. Our algorithms will show vehicles to users based on their rating behaviour.</span></h3>
+                                        
+                                <div class="form-heading">
+                                    <h5>Performance / <span>Show off your accomplishments</span> </h5>
+                                </div>
+
+                                <div class="white-field text-field field full-width">
+                                    <input placeholder="Top Speed (ie; 250 km/h or 155 mph)" 
+                                       name="Year" id="car-top-speed" type="text" id="inputTopSpeed">
+                                 </div>
+                                    <div class="clear"> </div>
+
+                                 <div class="white-field text-field field full-width">
+                                    <input placeholder="Acceleration 0 to 100 km/h (0 to 62 mph) (ie. 6.1s)" 
+                                       name="Year" id="car-0-60" type="text" id="input0-60">
+                                 </div>
+                                    <div class="clear"> </div>
+
+
+                                    <div class="white-field text-field field full-width">
+                                    <input placeholder="Acceleration 0 to 1000m (ie. 26.2s)" 
+                                       name="Year" id="car-acceleration" type="text" id="inputAccesleration">
+                                 </div>
+
+
+                              <div class="form-heading">
+                                   <h5> Technical data / <span>Give us a peek under the hood</span> </h5>
+                                </div>
+
+
+                                <div class="white-field text-field field left">
+                                    <input placeholder="Engine type / Cylinders (ie. i6)" 
+                                        type="text">
+                                 </div>
+
+                                
+                                <div class="white-field text-field field right">
+                                    <input placeholder="Fuel type (ie Petrol)" 
+                                       type="text">
+                                 </div>
+
+                                    <div class="clear"> </div>
+
+
+
+                                 <div class="white-field text-field field left">
+                                    <input placeholder="Engine position (ie. Front)" 
+                                        type="text">
+                                 </div>
+
+                                <div class="white-field text-field field right">
+                                    <input placeholder="Fuel system (ie. Direct Injection)" 
+                                       type="text" >
+                                 </div>
+
+                                 <div class="clear"> </div>
+
+
+
+                                <div class="white-field text-field field left">
+                                   <input placeholder="Number of Valves (ie. 24)" 
+                                       type="text">
+                                 </div>
+
+                                <div class="white-field text-field field right">
+                                    <input placeholder="Engine size (ie. 2979 cm3)" 
+                                      id="car-top-speed" type="text" id="">
+                                 </div>
+
+
+                                 <div class="clear"> </div>
+
+
+
+                                  <div class="white-field text-field field left">
+                                   <input placeholder="Aspiration (ie. Turbo)" 
+                                       type="text">
+                                 </div>
+
+                                <div class="white-field text-field field right">
+                                    <input placeholder="Horsepower (ie. 302 HP)" 
+                                      id="car-top-speed" type="text" id="">
+                                 </div>
+
+                                 <div class="clear"> </div>
+
+
+                                  <div class="white-field text-field field left">
+                                   <input placeholder="Max torque (ie. 295 lb/ft)" 
+                                       type="text">
+                                 </div>
+
+                                <div class="white-field text-field field right">
+                                    <input placeholder="Drive Wheels (ie. RWD)" 
+                                      id="car-top-speed" type="text" id="">
+                                 </div>
+
+                                 <div class="clear"> </div>
+
+
+
+                                  <div class="form-heading">
+                                   <h5> Emissions / <span>Eco or old school?</span> </h5>
+                                </div>
+
+
+                                  <div class="white-field text-field field left">
+                                   <input placeholder="Efficiency Label (ie. E)" 
+                                       type="text">
+                                 </div>
+
+                                <div class="white-field text-field field right">
+                                    <input placeholder="CO2 Emissions (ie. 192 g/Km)" 
+                                      type="text">
+                                 </div>
+
+                                   <div class="clear"> </div>
+
+                                 <div class="left action-buttons">
+                                 <p class="align-left"> <a id="resetFrom" href="#" class="reset-btn">Reset</a> </p>
+
+                                 <p class="align-right"> <a id="saveFrom" href="#" class="save-btn">Save</a> </p>
+                                 </div>
+
+
+
+
+                                </div> <!-- .form-container -->
+
+
+                            </div> <!-- #form2 -->
+                        </form>
+                      </div> <!-- .form-container -->
+                </div> <!-- .inner -->
+            </div> <!-- .structure -->  
+			
+
+            <div class="structure">
+                <div class="inner">
+                    <div class="my-stock-container">
+                    <h3 class="car-stock" id="myStock"> MY STOCK </h3>
+                        <div id="card-section">
+
+
+                            <!-- card -->
+                            <div class="car-card">
+                                <div class="top-section">
+                                    <div class="action-icons"> </div>
+                                    <img class="user-car" src="images/red_bmw.jpg" alt="Red BMW M3">
+                                    <div class="car-detail1">
+                                        <div class="car-action-btn">
+                                            <img src="images/stats-icon.svg" alt="stats icon">
+                                            <img src="images/edit-icon.svg" alt="stats icon">
+                                        </div> <!-- .car-action-btn -->
+                                        <h3 class="car-name">Batmobile  <img class="type-icon" src="images/luxury.svg"></h3>
+                                        <p class="date">Jan 3rd, 2016</p>
+                                        <div class="car-rating">
+                                            <div class="star highlighted"></div>
+                                            <div class="star highlighted"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                    </div> <!-- .car-detials1 -->  
+                                </div>
+                                <div class="bottom-section">
+                                    <section>
+                                        <p class="text-left">Brand: </p> <p class="text-right card-brand">BMW</p>
+                                    </section>
+                                      
+                                    <section>
+                                        <p class="text-left">model: </p> <p class="text-right card-model"> M3</p>
+                                    </section>
+                                    
+                                    <section>
+                                        <p class="text-left">color: </p> <p class="text-right card-color"> Ruby</p>   
+                                    </section>
+                                        
+                                    <section>
+                                        <p class="text-left">Desc: </p>  <p class="text-right card-description"> Lorem ipsum emdas asdjkd deocm odium bar pisum ipsum emdas english text blah it all goes in here, it can be any length but won’t show up in full in the stock page. </p>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- /card -->
+
+
+                             <div class="car-card">
+                                <div class="top-section">
+                                  <div class="action-icons"> </div>
+                                    <img class="user-car" src="images/red_bmw.jpg" alt="Red BMW M3">
+                                        <div class="car-detail1">
+                                           <div class="car-action-btn">
+                                            <img src="images/stats-icon.svg" alt="stats icon">
+                                            <img src="images/edit-icon.svg" alt="stats icon">
+                                             </div> <!-- .car-action-btn -->
+                                            <h3 class="car-name">Batmobile <img class="type-icon" src="images/transport.svg"></h3> 
+                                                <p class="date">Jan 3rd, 2016</p>
+                                              <div class="car-rating">
+                                                  <div class="star highlighted"></div>
+                                                  <div class="star highlighted"></div>
+                                                  <div class="star highlighted"></div>
+                                                  <div class="star highlighted"></div>
+                                                  <div class="star "></div>
+                                              </div>
+                                        </div>  
+                                </div> <!-- .top-section-->
+
+                                <div class="bottom-section">
+                                    <section>
+                                    <p class="text-left">Brand: </p> <p class="text-right">BMW</p></section>
+
+                                    <section>
+                                    <p class="text-left">model: </p> <p class="text-right"> M3</p>
+                                    </section>
+
+                                    <section>
+                                    <p class="text-left">color: </p> <p class="text-right"> Ruby</p>   
+                                    </section>
+
+                                    <section>
+                                    <p class="text-left">Desc: </p>  <p class="text-right"> Lorem ipsum emdas asdjkd deocm odium bar pisum ipsum emdas english text blah it all goes in here, it can be any length but won’t show up in full in the stock page. </p>
+                                    </section>   
+                                </div>
+
+                            </div> <!-- .car-card -->
+                    </div> <!-- #car-section -->
+                    
+                    </div> <!-- .my-stock-container -->
+                </div> <!-- .inner -->
+            </div> <!-- .structure -->
+                
+            
+            
+            
+		</div> <!-- .structure #content-canvas -->
+
+		<div id="footer" class="structure">
+			<div class="inner">
+				<div id="nav-footer">nav-footer</div>
+				<div id="logo-footer">logo-footer</div>
+			</div>
+		</div>
+
+
+        <script>
+
+              $('a.show-my-stock').on('click' , function(){
+                $('html, body').animate({scrollTop: $("#myStock").offset().top});
+              });
+
+              $('#resetFrom').on('click', function(){
+                    $('form').trigger("reset");
+              });
+
+        </script>
+
+	</body>
+</html>

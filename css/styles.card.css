@@ -1,0 +1,91 @@
+/** CAR CARD **/
+.car-card {
+    width: 30%;
+    float: left;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    min-height: 220px;
+    margin-bottom: 36px;
+}
+
+.car-card .top-section .car-detail1 {
+    padding-left: 150px;
+    margin-top: 25px;
+}
+
+.car-detail1 h3 {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.car-detail1 p {
+    margin: 0px;
+    font-weight: 600;
+    color: #9d9c9c;
+    text-transform: uppercase;
+}
+
+.car-detail1 .car-rating {
+    padding: 0px;
+    margin: 0px;
+}
+
+.car-detail1 .car-rating .star {
+    margin: 0px;
+}
+
+.car-detail1 img.type-icon {
+
+}
+
+.car-card .top-section img.user-car {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 144px;
+}
+
+.bottom-section {
+    margin-top: 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.bottom-section p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bottom-section p.text-left {
+    width: 30px;
+    margin-top: 2.2px;
+    float: left;
+    font-size: 10px;
+    color: #bcbcbc;
+}
+
+p.text-right {
+    word-break: break-all;
+    width: 291px;
+    float: right;
+    font-size: 12px;
+}
+
+.car-action-btn{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    width: 50px;
+}
+
+.car-action-btn img{
+    width: 20px;
+    float: right;
+    margin-right: 5px;
+}
