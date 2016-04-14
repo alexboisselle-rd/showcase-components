@@ -12,7 +12,9 @@ This exercise is built to practice applying abstract classes to a real-world exa
 **Instructions**
 
 1. Fork this repository to create your own
-2. Clone it to a work directory on your machine
-3. Work on it and submit your work by simply pushing back to your forked repo
+2. Create a folder on your machine called "showcase-components-repo"
+3. 'git init' in this new folder
+4. Clone your new forked repo into this folder
+5. Work on it and submit your work by simply pushing back to your forked repo
 
-__Diagrams to be built together in class, good luck!__
+_Diagrams to be built together in class, good luck!_
