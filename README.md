@@ -15,4 +15,4 @@ This exercise is built to practice applying abstract classes to a real-world exa
 2. Clone it to a work directory on your machine
 3. Work on it and submit your work by simply pushing back to your forked repo
 
-> Diagrams to be built together in class, good luck!
+__Diagrams to be built together in class, good luck!__
