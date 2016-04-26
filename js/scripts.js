@@ -21,9 +21,15 @@ $(document).ready(function(){
 
 	//create save button component, on click of that button, it generates a card
 
-	$('#submitBtn').on('click' , function(){
-		extractData();
-	});
+	var buttonData = {
+        text: "SAVE, I'LL FINISH THE REST LATER"
+    };
+
+    var saveButton = new Button("#save-form-button", buttonData, {
+        onClick: function(){
+            console.log("button clicked")
+        }
+    });
 });
 
 

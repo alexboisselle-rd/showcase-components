@@ -972,27 +972,6 @@ textarea {
     padding: 20px;
 }
 
-input#submitBtn {
-    font-family: 'Advent Pro', sans-serif;
-    background-image: url('../images/save-later-click.svg');
-    background-repeat: no-repeat;
-    background-position: 103% center;
-    background-size: 22%;
-    background-color: #39b54a;
-    border: none;
-    padding: 15px 69px 15px 25px;
-    color: white;
-    text-transform: capitalize;
-    font-size: 18px;
-    font-weight: 600;
-    float: right;
-    margin-top: 14px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-
-
 div.field.left {
     float: left;
     margin-right: 18px;

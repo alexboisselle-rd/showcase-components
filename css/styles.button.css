@@ -1,6 +1,6 @@
 input#submitBtn {    
     font-family: 'Advent Pro', sans-serif;
-    background-image: url('../images/save-later-click.svg');
+    background-image: url('images/save-later-click.svg');
     background-repeat: no-repeat;
     background-position: 103% center;
     background-size: 22%;
